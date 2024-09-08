@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+p {
+    font-family: "VT323", monospace;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin: 10px;
+    text-align: center;
+    --color: rgb(16, 245, 35);
+    color: var(--color);
+    cursor: pointer;
+
+    /* Text emission Effect */
+    text-shadow: 0 0 5px rgb(85, 155, 120)
+}
+
+.char { transition: opacity 0.1s }
